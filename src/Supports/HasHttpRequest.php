@@ -17,7 +17,7 @@ trait HasHttpRequest
     /**
      * Add a middleware.
      *
-     * @param callable $middleware
+     * @param callable    $middleware
      * @param null|string $name
      *
      * @return $this
@@ -33,7 +33,7 @@ trait HasHttpRequest
     }
 
     /**
-     * @param $endpoint
+     * @param       $endpoint
      * @param array $query
      * @param array $headers
      * @return array|string
@@ -48,9 +48,9 @@ trait HasHttpRequest
 
     /**
      *
-     * @param string $endpoint
+     * @param string       $endpoint
      * @param string|array $data
-     * @param array $options
+     * @param array        $options
      *
      * @return array|string
      */
@@ -76,7 +76,7 @@ trait HasHttpRequest
      *
      * @param string $method
      * @param string $uri
-     * @param array $options
+     * @param array  $options
      *
      * @return array|string
      */
@@ -94,7 +94,7 @@ trait HasHttpRequest
      */
     protected function getHttpClient()
     {
-        return new Client();
+        return new Client(['base_uri' => $this->baseUri]);
     }
 
     /**

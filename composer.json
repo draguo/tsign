@@ -3,7 +3,8 @@
   "description": "tsign",
   "require": {
     "php": ">=5.5.9",
-    "guzzlehttp/guzzle": "^6.2"
+    "guzzlehttp/guzzle": "^6.2",
+    "pimple/pimple": "^3.2"
   },
   "autoload": {
     "psr-4": {
